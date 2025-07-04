@@ -76,5 +76,5 @@ def retirar_qik(data: RetiroQik):
         server.sendmail(msg['From'], msg['To'], msg.as_string())
         server.quit()
         return {"msg": "Correo enviado al administrador."}
-    except pkg_resources.VersionConflict as e:
+        except pkg_resources.VersionConflict as e:
         return {"error": f"Error al enviar correo: {str(e)}"}
